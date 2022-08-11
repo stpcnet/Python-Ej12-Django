@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Peliculas y directores de cine</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Peliculas y directores de cine</a></h1>
+            {% for z in pelis %}
+            <div>
+                <h3><p>Pelicula: {{ z.title }}</p></h3>
+                <p>Descripcion Pelicula: {{ z.text|linebreaksbr }}</p>
+                <p>Director: <b>{{ z.director }}</b></p>
+                <p>------------------------------------------------------------------------------------</p>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
+
+
+
+
